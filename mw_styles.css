@@ -26,8 +26,8 @@ body {
 
 body>footer {
     background-color: rgb(208, 184, 109);
-   padding-bottom: 5px;
-   padding-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 address {
@@ -36,11 +36,13 @@ address {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
- }
+}
+
 /* Heading Styles */
 section h1 {
     font-weight: normal;
 }
+
 section h2 {
     font-style: normal;
 }
@@ -52,16 +54,15 @@ nav>ul {
     font-size: 0.9em;
 }
 
-nav>ul>li>a:link,
-nav>ul>li>a:visited {
+nav a:link,
+nav a:visited {
+    text-decoration: none;
     color: rgb(43, 59, 125);
-    text-decoration: underline;
 }
 
 nav>ul>li>a:hover,
 nav>ul>li>a:active {
     color: rgb(212, 35, 35);
-    text-decoration: underline;
 }
 
 /* Article Styles */
@@ -69,6 +70,7 @@ article#tour_summary h1 {
     letter-spacing: 0.2em;
     font-size: 2.2em;
 }
+
 article#tour_summary p {
     font-size: 1.1em;
 }
@@ -77,19 +79,43 @@ article#tour_summary p::first-letter {
     font-size: 1.2em;
 
 }
+
 /* Aside Styles */
 aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
+
 aside#tour_itinerary h2 {
-font-size: 0.8em;
-}
-aside#tour_itinerary h2:nth-last-of-type(odd){
-color: rgb(71, 91, 40);
+    font-size: 0.8em;
 }
 
-aside#tour_itinerary h2:nth-last-of-type(even){
-    color: rgb(71, 91, 40);
+aside#tour_itinerary p {
+    font-size: 0.8em;
 }
+
+aside#tour_itinerary h2:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary h2:nth-of-type(even),  {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
 /* Blockquote Styles */
-
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 0.65;
+}
+ 
+blockquote p {
+    padding: 2.5px 10px 2.5px 10px;
+}
